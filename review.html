@@ -1,0 +1,45 @@
+<html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>review</title>
+	<link rel="stylesheet" href="css/form.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+	<link rel="icon" href="img/icon.png" type="image/x-icon">
+</head>
+
+<body>
+	<form action="" class="formWithValidation">
+		<div class="form-group">
+			<label for="name">Имя</label>
+			<input type="text" id="name" class="name" placeholder="Введите ваше имя" required>
+		</div>
+		<div class="form-group">
+			<label for="email">Почта</label>
+			<input type="email" id="email" class="email" placeholder="breeze@gmail.com" required>
+		</div>
+		<div class="form-group">
+			<label for="phone">Номер телефона</label>
+			<input type="tel" id="phone" class="phone" placeholder="7XXXXXXXXXXX" required>
+		</div>
+		<div class="form-group">
+			<label for="message">Отзыв</label>
+			<textarea id="message" class="message" required></textarea>
+		</div>
+		<div class="rating">
+			<span class="rating__result"></span>
+			<i class="rating__star far fa-star"></i>
+			<i class="rating__star far fa-star"></i>
+			<i class="rating__star far fa-star"></i>
+			<i class="rating__star far fa-star"></i>
+			<i class="rating__star far fa-star"></i>
+		</div>
+		<button class="form__button" type="submit">Отправить</button>
+
+	</form>
+
+	<script src="js/form.js"></script>
+</body>
+
+</html>

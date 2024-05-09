@@ -1,0 +1,33 @@
+:root {
+	--gutter: 20px;
+}
+
+.container {
+	width: 1000px;
+	padding: 0 var(--gutter);
+	margin: 0 auto;
+}
+
+.grid-container {
+	width: 100%;
+	display: grid;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.products-grid {
+	grid-column: 3 span;
+	display: grid;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.absolute {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.height {
+	height: 90px;
+}

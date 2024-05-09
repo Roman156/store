@@ -1,0 +1,161 @@
+.container {
+	width: 100%;
+	display: flex;
+	/* Используем Flexbox для контейнера */
+	height: 100vh;
+	/* Высота контейнера равна высоте видимой области экрана */
+	align-items: center;
+}
+
+.block {
+	flex-basis: 50%;
+	/* Каждый блок займет 50% ширины контейнера */
+	border: 1px solid #000;
+	/* Граница для наглядности */
+	box-sizing: border-box;
+	/* Граница включена в ширину */
+
+}
+
+/* Дополнительные стили для выравнивания содержимого блоков */
+.block-left {
+	text-align: center;
+	/* Выравнивание текста в левом блоке */
+}
+
+.block-right {
+	padding-left: 60px;
+	text-align: center;
+	/* Выравнивание текста в правом блоке */
+}
+
+.swiper {
+	padding-top: 50px;
+	width: 700px;
+	height: 800px;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 760px;
+	height: 98%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.swiper .swiper-button-prev::after {
+	margin-left: 40px;
+	color: gray;
+	font-size: 70px;
+}
+
+.swiper .swiper-button-next::after {
+	margin-right: 40px;
+	color: gray;
+	font-size: 70px;
+}
+
+.swiper .swiper-pagination-bullet {
+	width: 30px;
+	height: 30px;
+	font-size: 18px;
+	background-color: #fff;
+}
+
+.swiper .swiper-pagination {
+	position: relative;
+	bottom: 80px;
+}
+
+.attrs-dotted {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin: 0 0 10px 0;
+}
+
+.attrs-dotted dt {
+	width: 40%;
+	margin: 0 0 8px 0;
+	padding: 0;
+	display: flex;
+	box-sizing: border-box;
+	align-items: flex-end;
+	position: relative;
+	word-break: break-word;
+	color: rgb(123, 121, 121);
+}
+
+.attrs-dotted dt:before {
+	content: "";
+	display: block;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: .2em;
+	border-bottom: 1px dotted #d6dbe0;
+}
+
+.attrs-dotted dt span {
+	padding-right: 5px;
+	background: #fff;
+	position: relative;
+}
+
+.attrs-dotted dd {
+	width: 60%;
+	display: flex;
+	box-sizing: border-box;
+	align-items: flex-end;
+	margin: 0 0 8px 0;
+	padding: 0 0 0 5px;
+	word-break: break-word;
+}
+
+.block-right h3 {
+	padding-bottom:15px;
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 23px;
+	color: var(--color-dark);
+}
+
+.block-right span,
+dd {
+	text-align: left;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 23px;
+	color: var(--color-dark);
+}
+
+.link_review {
+	padding-top:15px;
+	text-align: left;
+}
+
+.link_review a {
+	font-weight: 600;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	color: #071bf4;
+}
+
+.link_review a:hover {
+	text-decoration: none;
+	color: rgb(12, 12, 204);
+}
+
+.link_review:visited a {
+	text-decoration: none;
+}
